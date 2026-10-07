@@ -70,3 +70,12 @@ These are automatic on every page. Anything built from the template gets them to
 | 1.1     | 2026-10-06 | Quince-style redesign (eggplant), larger type, animations and tracker celebrations |
 | 1.2     | 2026-10-06 | Flattened to one folder so uploads work cleanly on GitHub |
 | 1.3     | 2026-10-06 | Own icon and link-preview cards (replaces Netlify defaults) |
+| 1.4     | 2026-10-06 | Security hardening: netlify.toml headers + strict CSP, .gitignore, inline styles moved to CSS |
+
+## Security notes
+
+- `netlify.toml` sends security headers on every page: no framing, HTTPS-only, strict Content Security Policy.
+- The policy allows only this site's own files, Google Fonts and Stripe's script (ready for future checkout buttons).
+  **Adding any other outside script or embed (e.g. MailerLite, YouTube) means adding its address to the policy first**, or the browser will block it.
+- Don't use `style="..."` attributes or inline `<script>` blocks in pages; the policy blocks them. Use classes in `style.css`.
+- No passwords, API keys or secrets belong in this repository. It is public.
