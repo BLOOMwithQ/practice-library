@@ -13,7 +13,20 @@ _template.html      ← copy this to start a new practice
 style.css           ← all design: colors, fonts, spacing
 practice.js         ← animations, copy buttons, 40-day tracker
 README.md           ← this guide
+
+favicon.png, apple-touch-icon.png,
+icon-192.png, icon-512.png, site.webmanifest  ← your eggplant "P" icon (tab + phone)
+og-home.png, og-money-safety.png              ← link-preview cards (1200 × 630)
 ```
+
+Live site: https://bloom-money-magnet.netlify.app
+
+## Link previews
+
+When you share a link, apps show the `og:image` named at the top of that page.
+New practices use `og-home.png` until you add their own card (1200 × 630 PNG; Canva works well).
+Apps keep a saved copy of a preview, so a change can take a while to appear. To refresh Facebook's copy, use
+https://developers.facebook.com/tools/debug/
 
 ## How it goes live
 
@@ -56,3 +69,4 @@ These are automatic on every page. Anything built from the template gets them to
 | 1.0     | 2026-10-06 | Library launched with *Money Safety* |
 | 1.1     | 2026-10-06 | Quince-style redesign (eggplant), larger type, animations and tracker celebrations |
 | 1.2     | 2026-10-06 | Flattened to one folder so uploads work cleanly on GitHub |
+| 1.3     | 2026-10-06 | Own icon and link-preview cards (replaces Netlify defaults) |
