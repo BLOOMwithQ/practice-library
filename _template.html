@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+  NEW PRACTICE TEMPLATE
+  1. Copy this file, rename it (e.g. "worthiness.html"), keep it in /practices.
+  2. Replace every [BRACKETED] item.
+  3. Use the building blocks below as needed. Delete the ones you don't use.
+  4. Add a card for it on index.html.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Practice Title]</title>
+  <meta name="description" content="[One-sentence summary]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">The Practice Library</a>
+    <nav><a href="#tracker">Tracker</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="crumbs"><a href="../index.html">Library</a> / [Practice Title]</div>
+
+  <section class="hero">
+    <div class="eyebrow">Practice No. [02] · [Theme]</div>
+    <h1>[Practice Title]</h1>
+    <p class="dek">[Subtitle]</p>
+    <p class="meta">Version 1.0</p>
+  </section>
+
+  <!-- BUILDING BLOCKS ============================================ -->
+
+  <!-- Section heading (the id makes it linkable) -->
+  <h2 id="section-one">[Section Heading]</h2>
+
+  <!-- Regular paragraph -->
+  <p>[Body text.]</p>
+
+  <!-- A short line that should land on its own -->
+  <p class="beat">[A line to linger on.]</p>
+
+  <!-- Inner-voice / thought list -->
+  <ul class="voices">
+    <li>[Thought one]</li>
+    <li>[Thought two]</li>
+  </ul>
+
+  <!-- Anchor statement (gets a Copy button automatically) -->
+  <div class="mantra"><small>[Label]</small>[The statement to repeat.]</div>
+
+  <!-- Old vs. new pattern -->
+  <div class="compare">
+    <div><b>Old pattern</b><span class="flow">[A → B → C]</span></div>
+    <div class="new"><b>New pattern</b><span class="flow">[A → B → C]</span></div>
+  </div>
+
+  <!-- Numbered steps -->
+  <ol class="steps">
+    <li><strong>[STEP].</strong> [Instruction]</li>
+    <li><strong>[STEP].</strong> [Instruction]</li>
+  </ol>
+
+  <!-- Pill tags -->
+  <ul class="tags"><li>[item]</li><li>[item]</li></ul>
+
+  <!-- Boxed card -->
+  <div class="card">
+    <h3>[Card title]</h3>
+    <p>[Card text]</p>
+  </div>
+
+  <!-- Day tracker (optional). data-tracker MUST be unique to this practice. -->
+  <section class="tracker" id="tracker" data-tracker="[unique-slug]" data-days="40">
+    <h3>Your 40-Day Tracker</h3>
+    <div class="tracker-start">
+      <p>Tap below to make today Day 1. Progress is saved privately in this browser.</p>
+      <button class="btn" type="button" data-action="start">Begin Day 1</button>
+    </div>
+    <div class="tracker-body" hidden>
+      <div class="grid40"></div>
+      <p class="legend">Light = partly done · Filled = both done · Outlined = today · Tap any day to edit it.</p>
+      <div class="day-panel">
+        <p><strong class="day-title"></strong></p>
+        <label class="check"><input type="checkbox" data-field="m"> [Morning practice]</label>
+        <label class="check"><input type="checkbox" data-field="e"> [Evening practice]</label>
+        <label for="note" class="meta">[Evening reflection question]</label>
+        <textarea id="note" data-field="note"></textarea>
+      </div>
+      <h3 style="font-size:1.2rem;margin-top:1.5rem">[Log title]</h3>
+      <ul class="evidence-log"></ul>
+      <p style="margin-top:1.25rem"><button class="btn ghost" type="button" data-action="reset">Start over</button></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>[Practice Title] · Version 1.0 · <a href="../index.html">Back to the library</a></p>
+    <p>This practice is for personal growth and is not financial, medical or mental-health advice.</p>
+  </div>
+</footer>
+
+<script src="../assets/practice.js"></script>
+</body>
+</html>
